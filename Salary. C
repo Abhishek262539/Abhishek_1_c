@@ -1,0 +1,21 @@
+
+    char name[50];
+    float salary;
+};
+
+int main() {
+    int numEmployees, i;
+    float totalSalary = 0.0, averageSalary;
+
+    
+    struct Employee employees[MAX_EMPLOYEES];
+
+    
+    printf("Enter the number of employees: ");
+    scanf("%d", &numEmployees);
+
+    
+    if (numEmployees <= 0 || numEmployees > MAX_EMPLOYEES) {
+        printf("Invalid number of employees.\n");
+        return 1;
+    }
